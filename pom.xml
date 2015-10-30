@@ -5,7 +5,7 @@
 	<groupId>com.infogen</groupId>
 	<artifactId>infogen_aggregator</artifactId>
 	<packaging>pom</packaging>
-	<version>V2.1.00R151028</version>
+	<version>V2.1.00R151029</version>
 
 	<name>infogen_aggregator</name>
 	<url>https://github.com/larrylgq/infogen_aggregator</url>
