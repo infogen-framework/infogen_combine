@@ -1,0 +1,11 @@
+/target/
+.classpath
+.settings/
+.project
+*.log
+*.log.*
+<<<<<<< HEAD
+/bin/
+=======
+/log
+>>>>>>> 9c9b57a650156bf9e6a1ea9858dade4dad7b5429

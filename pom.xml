@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.infogen</groupId>
+	<artifactId>infogen_aggregator</artifactId>
+	<packaging>pom</packaging>
+	<version>V2.1.00R151028</version>
+
+	<name>infogen_aggregator</name>
+	<url>https://github.com/larrylgq/infogen_aggregator</url>
+	<description>分布式服务框架</description>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>larry</name>
+			<email>larrylv@outlook.com</email>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git@github.com:larrylgq/infogen_aggregator.git</connection>
+		<developerConnection>scm:git@github.com:larrylgq/infogen_aggregator.git</developerConnection>
+		<url>git@github.com:larrylgq/infogen_aggregator.git</url>
+	</scm>
+	<properties>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+
+		<sonar.exclusions>
+		</sonar.exclusions>
+		<sonar.language>java</sonar.language>
+	</properties>
+
+	<modules>
+		<module>../infogen_core</module>
+		<module>../infogen_authc</module>
+		<module>../infogen_hibernate</module>
+		<module>../infogen_http</module>
+		<module>../infogen_rpc</module>
+		<module>../infogen_soa</module>
+		<module>../infogen_demo</module>
+		<module>../infogen_management</module>
+	</modules>
+	<dependencies>
+
+	</dependencies>
+</project>
