@@ -5,7 +5,7 @@
 	<groupId>com.infogen</groupId>
 	<artifactId>infogen_aggregator</artifactId>
 	<packaging>pom</packaging>
-	<version>V2.1.00R151029</version>
+	<version>V1.0</version>
 
 	<name>infogen_aggregator</name>
 	<url>https://github.com/larrylgq/infogen_aggregator</url>
@@ -30,7 +30,7 @@
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-
+		<global.version>V2.1.00R151029</global.version>
 		<sonar.exclusions>
 		</sonar.exclusions>
 		<sonar.language>java</sonar.language>
@@ -49,4 +49,5 @@
 	<dependencies>
 
 	</dependencies>
+
 </project>
