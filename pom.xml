@@ -47,7 +47,7 @@
 		<module>../infogen_hibernate</module>
 		<!-- 测试及管理网站 -->
 		<module>../infogen_demo</module>
-		<!-- <module>../infogen_management</module> -->
+		<module>../infogen_management</module>
 	</modules>
 	<dependencies>
 		<dependency>
