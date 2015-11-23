@@ -104,7 +104,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.9.8</version>
+			<version>6.9.9</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -174,7 +174,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.0.3</version>
 				<configuration>
 					<!-- <threshold>High</threshold> -->
 					<effort>Default</effort>
@@ -201,7 +201,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.7.2.201409121644</version>
+				<version>0.7.5.201505241946</version>
 				<executions>
 					<execution>
 						<id>default-prepare-agent</id>
