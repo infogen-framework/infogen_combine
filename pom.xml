@@ -30,7 +30,7 @@
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-		<global.version>V2.1.00R151029</global.version>
+		<global.version>V2.2.00R151120</global.version>
 		<sonar.exclusions>
 		</sonar.exclusions>
 		<sonar.language>java</sonar.language>
