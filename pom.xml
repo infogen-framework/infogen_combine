@@ -38,12 +38,15 @@
 
 	<modules>
 		<module>../infogen_core</module>
-		<!-- soa 框架相关 -->
+		<!-- soa 框架 -->
 		<module>../infogen_rpc</module>
 		<module>../infogen_soa</module>
-		<!-- 管理网站 -->
+		<!-- 服务治理网站 -->
 		<module>../infogen_authc</module>
 		<module>../infogen_management</module>
+		<!-- demo -->
+		<module>../infogen_hibernate</module>
+		<module>../infogen_demo</module>
 	</modules>
 	<dependencies>
 		<dependency>
