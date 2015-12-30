@@ -39,6 +39,7 @@
 	<modules>
 		<module>../infogen_core</module>
 		<!-- soa 框架 -->
+		<module>../infogen_http</module>
 		<module>../infogen_rpc</module>
 		<module>../infogen_soa</module>
 		<!-- 服务治理网站 -->
