@@ -44,9 +44,6 @@
 		<!-- 服务治理网站 -->
 		<module>../infogen_authc</module>
 		<module>../infogen_management</module>
-		<!-- demo -->
-		<module>../infogen_hibernate</module>
-		<module>../infogen_demo</module>
 	</modules>
 	<dependencies>
 		<dependency>
@@ -54,11 +51,21 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.5</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.5</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.logging.log4j</groupId> -->
+		<!-- <artifactId>log4j-1.2-api</artifactId> -->
+		<!-- <version>2.5</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.logging.log4j</groupId> -->
+		<!-- <artifactId>log4j-jcl</artifactId> -->
+		<!-- <version>2.5</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.logging.log4j</groupId> -->
+		<!-- <artifactId>log4j-slf4j-impl</artifactId> -->
+		<!-- <version>2.5</version> -->
+		<!-- </dependency> -->
 
 
 		<dependency>
