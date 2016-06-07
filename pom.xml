@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.infogen</groupId>
-	<artifactId>infogen_aggregator</artifactId>
+	<artifactId>infogen_combine</artifactId>
 	<packaging>pom</packaging>
 	<version>V1.0</version>
 
-	<name>infogen_aggregator</name>
-	<url>https://github.com/larrylgq/infogen_aggregator</url>
+	<name>infogen_combine</name>
+	<url>https://github.com/infogen-soa/infogen_combine</url>
 	<description>分布式服务框架</description>
 	<licenses>
 		<license>
@@ -23,9 +23,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git@github.com:larrylgq/infogen_aggregator.git</connection>
-		<developerConnection>scm:git@github.com:larrylgq/infogen_aggregator.git</developerConnection>
-		<url>git@github.com:larrylgq/infogen_aggregator.git</url>
+		<connection>scm:git@github.com:infogen-soa/infogen_combine.git</connection>
+		<developerConnection>scm:git@github.com:infogen-soa/infogen_combine.git</developerConnection>
+		<url>git@github.com:infogen-soa/infogen_combine.git</url>
 	</scm>
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -39,14 +39,13 @@
 	<modules>
 		<module>../infogen_core</module>
 		<!-- soa 框架 -->
+		<module>../infogen_authc</module>
 		<module>../infogen_rpc</module>
 		<module>../infogen_soa</module>
 		<!-- 服务治理网站 -->
-		<module>../infogen_authc</module>
 		<module>../infogen_management</module>
 		<!-- DEMO -->
 		<module>../infogen_demo</module>
-		<module>../infogen_hibernate</module>
 	</modules>
 	<dependencies>
 		<dependency>
