@@ -42,10 +42,6 @@
 		<module>../infogen_authc</module>
 		<module>../infogen_rpc</module>
 		<module>../infogen_soa</module>
-		<!-- 服务治理网站 -->
-		<module>../infogen_management</module>
-		<!-- DEMO -->
-		<module>../infogen_demo</module>
 	</modules>
 	<dependencies>
 		<dependency>
