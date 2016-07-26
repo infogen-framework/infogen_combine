@@ -6,16 +6,22 @@
 	<artifactId>infogen_combine</artifactId>
 	<packaging>pom</packaging>
 	<version>V1.0</version>
-
 	<name>infogen_combine</name>
-	<url>https://github.com/infogen-soa/infogen_combine</url>
+	<url>https://github.com/infogen7/infogen_combine</url>
 	<description>分布式服务框架</description>
+
+	<issueManagement>
+		<system>Github Issue</system>
+		<url>https://github.com/infogen7/infogen_combine/issues</url>
+	</issueManagement>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
+
 	<developers>
 		<developer>
 			<name>larry</name>
@@ -23,10 +29,11 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git@github.com:infogen-soa/infogen_combine.git</connection>
-		<developerConnection>scm:git@github.com:infogen-soa/infogen_combine.git</developerConnection>
-		<url>git@github.com:infogen-soa/infogen_combine.git</url>
+		<connection>scm:git@github.com:infogen7/infogen_combine.git</connection>
+		<developerConnection>scm:git@github.com:infogen7/infogen_combine.git</developerConnection>
+		<url>git@github.com:infogen7/infogen_combine.git</url>
 	</scm>
+
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
@@ -41,9 +48,6 @@
 		<!-- soa 框架 -->
 		<module>../infogen_rpc</module>
 		<module>../infogen_soa</module>
-		<!-- DEMO -->
-		<module>../infogen_demo</module>
-		
 		<!-- 其它 -->
 		<module>../infogen_hibernate</module>
 		<module>../infogen_authc</module>
@@ -96,19 +100,6 @@
 		</dependency>
 	</dependencies>
 
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>Nexus Release Repository</name>
-			<url>http://192.168.0.126:8081/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Nexus Snapshot Repository</name>
-			<url>http://192.168.0.126:8081/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -123,41 +114,33 @@
 					</compilerArguments>
 				</configuration>
 			</plugin>
+			<!-- Source -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
 				<version>3.0.0</version>
 				<executions>
 					<execution>
-						<id>attach-sources</id>
+						<phase>package</phase>
 						<goals>
 							<goal>jar-no-fork</goal>
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
-
+			<!-- Javadoc -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.10.3</version>
-				<configuration>
-					<locale>en_US</locale>
-				</configuration>
 				<executions>
 					<execution>
-						<id>attach-javadocs</id>
+						<phase>package</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.8.2</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -186,4 +169,68 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>oss</id>
+					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+				</snapshotRepository>
+				<repository>
+					<id>oss</id>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
+			<build>
+				<plugins>
+					<!-- Source -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<version>3.0.0</version>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>jar-no-fork</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<!-- Javadoc -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.10.3</version>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<!-- Gpg Signature -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.6</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
 </project>
