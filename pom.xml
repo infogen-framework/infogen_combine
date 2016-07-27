@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.infogen</groupId>
+	<groupId>com.github.infogen7</groupId>
 	<artifactId>infogen_combine</artifactId>
 	<packaging>pom</packaging>
-	<version>V1.0</version>
-	<name>infogen_combine</name>
+	<version>${global.version}</version>
+	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/infogen7/infogen_combine</url>
 	<description>分布式服务框架</description>
 
@@ -37,7 +37,7 @@
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-		<global.version>V2.5.00R151230</global.version>
+		<global.version>V2.5.00R160727</global.version>
 		<sonar.exclusions>
 		</sonar.exclusions>
 		<sonar.language>java</sonar.language>
@@ -185,34 +185,6 @@
 			</distributionManagement>
 			<build>
 				<plugins>
-					<!-- Source -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<version>3.0.0</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- Javadoc -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.10.3</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
 					<!-- Gpg Signature -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -232,5 +204,4 @@
 			</build>
 		</profile>
 	</profiles>
-
 </project>
