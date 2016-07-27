@@ -4,8 +4,8 @@
 
 	<groupId>com.github.infogen7</groupId>
 	<artifactId>infogen_combine</artifactId>
+	<version>1.0</version>
 	<packaging>pom</packaging>
-	<version>${global.version}</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/infogen7/infogen_combine</url>
 	<description>分布式服务框架</description>
@@ -37,7 +37,7 @@
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-		<global.version>V2.5.00R160727</global.version>
+		<global.version>V2.5.00R160728</global.version>
 		<sonar.exclusions>
 		</sonar.exclusions>
 		<sonar.language>java</sonar.language>
