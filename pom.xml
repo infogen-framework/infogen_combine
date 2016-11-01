@@ -37,7 +37,7 @@
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-		<global.version>V2.6.01R160829</global.version>
+		<global.version>V2.6.10R161101</global.version>
 		<sonar.exclusions>
 		</sonar.exclusions>
 		<sonar.language>java</sonar.language>
@@ -46,7 +46,6 @@
 	<modules>
 		<module>../infogen_core</module>
 		<!-- soa 框架 -->
-		<module>../infogen_rpc</module>
 		<module>../infogen_soa</module>
 		<!-- 其它 -->
 		<module>../infogen_hibernate</module>
