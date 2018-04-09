@@ -4,7 +4,7 @@
 
 	<groupId>com.github.infogen7</groupId>
 	<artifactId>infogen_combine</artifactId>
-	<version>1.1</version>
+	<version>1.2</version>
 	<packaging>pom</packaging>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/infogen7/infogen_combine</url>
@@ -37,7 +37,7 @@
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-		<global.version>V2.7.1R171107</global.version>
+		<global.version>V3.0.0R180409</global.version>
 		<sonar.exclusions>
 		</sonar.exclusions>
 		<sonar.language>java</sonar.language>
