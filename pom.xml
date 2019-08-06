@@ -45,6 +45,7 @@
 	</properties>
 
 	<modules>
+		<module>../infogen_attach</module>
 		<module>../infogen_core</module>
 		<!-- soa 框架 -->
 		<module>../infogen_soa</module>
