@@ -40,11 +40,6 @@
 
 	<modules>
 		<module>../infogen_core</module>
-		<!-- soa 框架 -->
-		<module>../infogen_soa</module>
-		<!-- 其它 -->
-		<module>../infogen_authc</module>
-		<module>../infogen_hibernate</module>
 	</modules>
 	<dependencies>
 	</dependencies>
