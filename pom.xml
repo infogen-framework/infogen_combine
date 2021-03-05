@@ -3,7 +3,7 @@
 
 	<groupId>com.github.infogen7</groupId>
 	<artifactId>infogen_combine</artifactId>
-	<version>V12.0.0R210207</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/infogen7/infogen_combine</url>
