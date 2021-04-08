@@ -99,14 +99,14 @@
 
 	<profiles>
 		<profile>
-			<id>release</id>
+			<id>oss</id>
 			<distributionManagement>
 				<snapshotRepository>
-					<id>oss</id>
+					<id>snapshots</id>
 					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 				</snapshotRepository>
 				<repository>
-					<id>oss</id>
+					<id>releases</id>
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
